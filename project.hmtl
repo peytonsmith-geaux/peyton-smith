@@ -72,7 +72,7 @@
             <div class="project-links" style="margin-top: 0; padding-top: 1rem;">
               <a href="index.html" class="link-btn">Explore Live Site &rarr;</a>
               <a href="resume.html" class="link-btn">View Resume Page &rarr;</a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub Repository &nearr;</a>
+              <a href="https://github.com/peytonsmith-geaux/peyton-smith" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub Repository &nearr;</a>
             </div>
           </article>
         </div>
@@ -190,9 +190,9 @@
         &copy; 2026 Peyton T. Smith. All rights reserved.
       </div>
       <div class="social-links">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+        <a href="https://github.com/peytonsmith-geaux" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
-        <a href="mailto:contact@example.com" class="social-link">Email</a>
+        <a href="mailto:psmi136@lsu.edu" class="social-link">psmi136@lsu.edu</a>
       </div>
     </div>
   </footer>
