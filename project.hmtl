@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Featured systems, operations, and technical projects by Peyton T. Smith.">
+  <title>Peyton T. Smith | Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" id="nav-brand-logo">
+        <span class="brand-icon">PTS</span>
+        <span>Peyton T. Smith</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="resume.html" class="nav-link" id="nav-resume">Resume</a></li>
+          <li><a href="project.html" class="nav-link active" id="nav-projects">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="section-header">
+        <span class="badge" style="width: fit-content;">Portfolio &amp; Development</span>
+        <h1>Projects &amp; Technical Work</h1>
+        <p>A showcase of completed web projects and technical systems currently in development.</p>
+      </div>
+
+      <!-- COMPLETED PROJECTS SECTION -->
+      <div style="margin-bottom: 4rem;">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+          <h2 style="font-size: 1.5rem;">Completed Projects</h2>
+          <span class="badge badge-success">1 Project</span>
+        </div>
+
+        <div class="grid">
+          <article class="card" style="border-color: rgba(16, 185, 129, 0.3); background: linear-gradient(135deg, rgba(18, 24, 38, 0.85), rgba(16, 185, 129, 0.05));">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+              <div>
+                <span class="badge badge-success" style="margin-bottom: 0.5rem;">✓ Completed &bull; 2026</span>
+                <h3 style="font-size: 1.5rem; margin-top: 0.25rem;">Personal Static Portfolio Website</h3>
+              </div>
+              <div class="tag-list" style="margin-top: 0;">
+                <span class="tag">HTML5</span>
+                <span class="tag">Vanilla CSS3</span>
+                <span class="tag">Responsive UI</span>
+                <span class="tag">Git &amp; GitHub</span>
+              </div>
+            </div>
+
+            <p style="margin-bottom: 1rem; font-size: 1.05rem;">
+              A multi-page personal website designed and built from scratch to establish a modern digital portfolio. Features semantic HTML5 structure, a custom dark-mode CSS design system with glassmorphism elements, fully responsive layout across desktop and mobile devices, and print-optimized resume view.
+            </p>
+
+            <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.4rem;">
+              <li>Constructed clean, accessible navigation architecture across Home, Resume, and Project showcases.</li>
+              <li>Engineered a custom vanilla CSS design system with reusable variables, hover transitions, and dark slate color palettes.</li>
+              <li>Managed project initialization and structure using Git version control and GitHub repository hosting.</li>
+            </ul>
+
+            <div class="project-links" style="margin-top: 0; padding-top: 1rem;">
+              <a href="index.html" class="link-btn">Explore Live Site &rarr;</a>
+              <a href="resume.html" class="link-btn">View Resume Page &rarr;</a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub Repository &nearr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- IN-PROGRESS PROJECTS SECTION -->
+      <div>
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+          <h2 style="font-size: 1.5rem;">Projects In Progress</h2>
+          <span class="badge badge-info">Active Coursework &amp; Certifications</span>
+        </div>
+
+        <div class="grid grid-cols-2">
+          
+          <!-- Project 1: Python App (ISDS 3107) -->
+          <article class="card project-card">
+            <div class="project-meta">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                <span class="badge badge-info">In Progress &bull; ISDS 3107</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">LSU</span>
+              </div>
+              <h3 class="project-title">Python Information Systems Application</h3>
+              <p>
+                Developing hands-on applications in Python emphasizing modular program design, object-oriented concepts, version control, and data structure manipulation for business data workflows.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Python</span>
+                <span class="tag">Program Design</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">Git</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <span style="font-size: 0.85rem; color: var(--accent-cyan);">⚡ Under active development this semester</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Database & SQL (ISDS 3110) -->
+          <article class="card project-card">
+            <div class="project-meta">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                <span class="badge badge-info">In Progress &bull; ISDS 3110</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">LSU</span>
+              </div>
+              <h3 class="project-title">Relational Database Modeling &amp; SQL Querying</h3>
+              <p>
+                Designing entity-relationship (ER) diagrams, database normalization to 3NF, and writing structured SQL queries for business data management, reporting, and data warehousing exposure.
+              </p>
+              <div class="tag-list">
+                <span class="tag">SQL</span>
+                <span class="tag">ER Diagrams</span>
+                <span class="tag">Relational Modeling</span>
+                <span class="tag">OLAP</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <span style="font-size: 0.85rem; color: var(--accent-cyan);">⚡ Under active development this semester</span>
+            </div>
+          </article>
+
+          <!-- Project 3: AWS Cloud Architecture -->
+          <article class="card project-card">
+            <div class="project-meta">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                <span class="badge badge-info">In Progress &bull; AWS Certification</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Expected 2027</span>
+              </div>
+              <h3 class="project-title">AWS Cloud Infrastructure &amp; Security Lab</h3>
+              <p>
+                Practicing foundational cloud architecture principles, exploring AWS core computing, storage, networking, and IAM security configurations in preparation for AWS certification.
+              </p>
+              <div class="tag-list">
+                <span class="tag">AWS Cloud</span>
+                <span class="tag">Cloud Architecture</span>
+                <span class="tag">IAM Security</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <span style="font-size: 0.85rem; color: var(--accent-cyan);">⚡ Certification study in progress</span>
+            </div>
+          </article>
+
+          <!-- Project 4: Upcoming Dashboards -->
+          <article class="card project-card" style="border-style: dashed;">
+            <div class="project-meta">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                <span class="badge" style="background: rgba(255, 255, 255, 0.05); color: var(--text-muted); border-color: var(--border-subtle);">Future Project</span>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Planned</span>
+              </div>
+              <h3 class="project-title">Business Analytics &amp; Operations Dashboard</h3>
+              <p>
+                Upcoming analytical models utilizing Microsoft Excel (Specialist level) and Power BI to analyze process turnover, supply chain metrics, and operational performance indicators.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Excel (Advanced)</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">Business Intelligence</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <span style="font-size: 0.85rem; color: var(--text-dim);">🛠️ Planned for upcoming semester cycle</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-copy">
+        &copy; 2026 Peyton T. Smith. All rights reserved.
+      </div>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+        <a href="mailto:contact@example.com" class="social-link">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
