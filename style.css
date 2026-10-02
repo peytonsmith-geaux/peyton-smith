@@ -651,7 +651,8 @@ footer {
   .navbar,
   .btn-group,
   footer,
-  #btn-print-resume {
+  #btn-print-resume,
+  #btn-download-resume {
     display: none !important;
   }
 
