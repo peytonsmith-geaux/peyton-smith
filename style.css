@@ -652,7 +652,6 @@ footer {
   .btn-group,
   footer,
   #btn-print-resume,
-  #btn-download-resume,
   #btn-download-resume-cv {
     display: none !important;
   }
