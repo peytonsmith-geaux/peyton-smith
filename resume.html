@@ -45,15 +45,85 @@
           </p>
         </div>
         <div class="btn-group">
-          <a href="PTS%20resume%20LSU%20updated.pdf" target="_blank" class="btn btn-secondary" id="btn-download-resume">
+          <a href="LSU_resume_1page.pdf" target="_blank" class="btn btn-primary" id="btn-print-resume" title="Open official 1-page PDF resume to view, print, or save">
             📄 Print / Save as PDF
           </a>
-          <a href="mailto:psmi136@lsu.edu" class="btn btn-primary">
+          <a href="PTS%20resume%20LSU%20updated.pdf" target="_blank" class="btn btn-secondary" id="btn-download-resume-cv" title="View extended multi-page CV">
+            📋 Extended CV (PDF)
+          </a>
+          <a href="mailto:psmi136@lsu.edu" class="btn btn-secondary">
             ✉️ Contact Peyton
           </a>
         </div>
       </div>
 
+      <!-- Resume View Switcher & Quick Links -->
+      <div class="resume-view-switcher">
+        <div class="view-toggle-group" role="tablist" aria-label="Resume Display Mode">
+          <button type="button" class="view-toggle-btn active" id="tab-btn-pdf" role="tab" aria-selected="true" aria-controls="section-pdf-embed">
+            <span>📄</span> 1-Page PDF (Official)
+          </button>
+          <button type="button" class="view-toggle-btn" id="tab-btn-web" role="tab" aria-selected="false" aria-controls="section-web-resume">
+            <span>📑</span> Interactive Web CV
+          </button>
+          <button type="button" class="view-toggle-btn" id="tab-btn-all" role="tab" aria-selected="false">
+            <span>👁️</span> Show Both
+          </button>
+        </div>
+        <div class="btn-group" style="gap: 0.65rem;">
+          <a href="LSU_resume_1page.pdf" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1.1rem; font-size: 0.875rem;">
+            <span>↗</span> Open Full PDF
+          </a>
+          <a href="LSU_resume_1page.pdf" download="LSU_resume_1page.pdf" class="btn btn-primary" style="padding: 0.5rem 1.15rem; font-size: 0.875rem;">
+            <span>⬇</span> Download 1-Page PDF
+          </a>
+        </div>
+      </div>
+
+      <!-- Section 1: Embedded 1-Page Official Resume PDF -->
+      <section id="section-pdf-embed" class="resume-embed-card" aria-label="Embedded 1-Page Resume PDF">
+        <div class="resume-embed-header">
+          <div class="resume-embed-title-area">
+            <h2><span>📄</span> Official 1-Page Resume (PDF)</h2>
+            <span class="badge" style="background: var(--gold-light); color: var(--gold-dark); border: 1px solid var(--border-gold);">
+              ★ Revised &amp; Updated
+            </span>
+          </div>
+          <div class="resume-embed-actions">
+            <a href="LSU_resume_1page.pdf" target="_blank" class="btn btn-secondary" style="padding: 0.45rem 0.95rem; font-size: 0.85rem;">
+              <span>↗</span> Open in New Tab
+            </a>
+            <a href="LSU_resume_1page.pdf" download="LSU_resume_1page.pdf" class="btn btn-primary" style="padding: 0.45rem 1.05rem; font-size: 0.85rem;">
+              <span>⬇</span> Download Copy
+            </a>
+          </div>
+        </div>
+        <div class="resume-pdf-wrapper">
+          <object data="LSU_resume_1page.pdf#toolbar=1&navpanes=0&scrollbar=1&view=FitH" type="application/pdf" class="resume-pdf-frame">
+            <iframe src="LSU_resume_1page.pdf#toolbar=1&navpanes=0&scrollbar=1&view=FitH" class="resume-pdf-frame" title="Peyton T. Smith 1-Page Resume">
+              <div class="pdf-fallback-container">
+                <p style="font-size: 1.15rem; color: var(--text-main); font-weight: 600;">
+                  Unable to render embedded PDF inline on this device.
+                </p>
+                <p>
+                  You can view or download the complete 1-page resume directly:
+                </p>
+                <div class="btn-group" style="margin-top: 0.5rem;">
+                  <a href="LSU_resume_1page.pdf" target="_blank" class="btn btn-primary">
+                    Open LSU_resume_1page.pdf &rarr;
+                  </a>
+                  <a href="LSU_resume_1page.pdf" download="LSU_resume_1page.pdf" class="btn btn-secondary">
+                    Download PDF
+                  </a>
+                </div>
+              </div>
+            </iframe>
+          </object>
+        </div>
+      </section>
+
+      <!-- Section 2: Interactive Web CV -->
+      <section id="section-web-resume" aria-label="Interactive Web Resume">
       <div class="grid grid-cols-3" style="align-items: start; gap: 2rem;">
 
         <!-- Left 2 Cols: Experience, Education, Coursework, Leadership -->
@@ -309,6 +379,7 @@
         </div>
 
       </div>
+      </section>
 
     </div>
   </main>
@@ -328,6 +399,48 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    (function() {
+      const btnPdf = document.getElementById('tab-btn-pdf');
+      const btnWeb = document.getElementById('tab-btn-web');
+      const btnAll = document.getElementById('tab-btn-all');
+      const secPdf = document.getElementById('section-pdf-embed');
+      const secWeb = document.getElementById('section-web-resume');
+
+      if (!btnPdf || !btnWeb || !btnAll || !secPdf || !secWeb) return;
+
+      function setView(mode) {
+        btnPdf.classList.toggle('active', mode === 'pdf');
+        btnPdf.setAttribute('aria-selected', mode === 'pdf');
+
+        btnWeb.classList.toggle('active', mode === 'web');
+        btnWeb.setAttribute('aria-selected', mode === 'web');
+
+        btnAll.classList.toggle('active', mode === 'all');
+        btnAll.setAttribute('aria-selected', mode === 'all');
+
+        if (mode === 'pdf') {
+          secPdf.style.display = 'block';
+          secWeb.style.display = 'none';
+        } else if (mode === 'web') {
+          secPdf.style.display = 'none';
+          secWeb.style.display = 'block';
+        } else {
+          secPdf.style.display = 'block';
+          secWeb.style.display = 'block';
+        }
+      }
+
+      btnPdf.addEventListener('click', function() { setView('pdf'); });
+      btnWeb.addEventListener('click', function() { setView('web'); });
+      btnAll.addEventListener('click', function() { setView('all'); });
+
+      // Default: show both so the embedded PDF document is immediately visible at the top
+      // and visitor can scroll to see the web CV breakdown or toggle anytime.
+      setView('all');
+    })();
+  </script>
 
 </body>
 
